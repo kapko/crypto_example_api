@@ -1,0 +1,36 @@
+<h1>Курсы криптовалют</h1>
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Crypto</th>
+      <th scope="col">USD $</th>
+      <th scope="col">EURO</th>
+      <th scope="col">RUB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Bitcoin <br><b>BTN</b></td>
+      <td>{{(currencies | async)?.BTC.USD}}</td>
+      <td>{{(currencies | async)?.BTC.EUR}}</td>
+      <td>{{(currencies | async)?.BTC.RUB}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Ethereum <br><b>ETH</b></td>
+      <td>{{(currencies | async)?.ETH.USD}}</td>
+      <td>{{(currencies | async)?.ETH.EUR}}</td>
+      <td>{{(currencies | async)?.ETH.RUB}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>XRP <br><b>XRP</b></td>
+      <td>{{(currencies | async)?.XRP.USD}}</td>
+      <td>{{(currencies | async)?.XRP.EUR}}</td>
+      <td>{{(currencies | async)?.XRP.RUB}}</td>
+    </tr>
+  </tbody>
+</table>
